@@ -178,7 +178,9 @@ with st.sidebar:
         "**Nova Pro** — Amazon Nova Pro\n"
         "~200-token chunks, K=20, hybrid \u03b1=0.8\n\n"
         "**Opus 4.6** — Claude Opus 4.6\n"
-        "~1000-token chunks, K=20, hybrid \u03b1=0.8"
+        "~200-token chunks, K=20, hybrid \u03b1=0.8\n\n"
+        "*Same retrieval, different generator — "
+        "matching the paper's held-out test design.*"
     )
     st.markdown("---")
     st.caption("Jonathan Lindahl — DePaul University — MS Data Science Capstone 2026")
