@@ -178,9 +178,18 @@ with st.sidebar:
         "**Nova Pro** — Amazon Nova Pro\n"
         "~200-token chunks, K=20, hybrid \u03b1=0.8\n\n"
         "**Opus 4.6** — Claude Opus 4.6\n"
-        "~200-token chunks, K=20, hybrid \u03b1=0.8\n\n"
-        "*Same retrieval, different generator — "
-        "matching the paper's held-out test design.*"
+        "~200-token chunks, K=20, hybrid \u03b1=0.8"
+    )
+    st.markdown("---")
+    st.markdown("## Key Results")
+    st.markdown(
+        "- Opus 4.6: **87.6%** judge accuracy\n"
+        "- Nova Pro: **74.5%** judge accuracy\n"
+        "- +13% judge accuracy on identical retrieval\n"
+        "- Hybrid retrieval (\u03b1=0.8) outperforms pure dense\n"
+        "- Keyword scoring inflates accuracy by ~3-5%\n"
+        "- Generation quality is a larger bottleneck than retrieval design\n"
+        "- 3,417 chunks across all 3 books"
     )
     st.markdown("---")
     st.caption("Jonathan Lindahl — DePaul University — MS Data Science Capstone 2026")
